@@ -1,0 +1,8 @@
+#!/bin/bash
+#$ -N CavityAberration
+#$ -e /srv/zfs01/user_data/papag/StandardErrorFiles/
+#$ -o /srv/zfs01/user_data/papag/StandardOutputFiles/
+#$ -M papag@stanford.edu
+#$ -m be
+
+/usr/bin/python $HOME/Documents/LevLab/CavityAberrationSimulation/CavityPerturbation.py $SGE_TASK_ID
